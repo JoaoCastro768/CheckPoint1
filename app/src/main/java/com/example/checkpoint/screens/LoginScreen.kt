@@ -1,4 +1,4 @@
-package carreiras.com.github.navigation_between_screens.screens
+package com.example.checkpoint.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

@@ -1,4 +1,4 @@
-package carreiras.com.github.navigation_between_screens
+package com.example.checkpoint
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,24 +7,25 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import carreiras.com.github.navigation_between_screens.screens.LoginScreen
-import carreiras.com.github.navigation_between_screens.screens.MenuScreen
-import carreiras.com.github.navigation_between_screens.screens.PedidosScreen
-import carreiras.com.github.navigation_between_screens.screens.PerfilScreen
-import carreiras.com.github.navigation_between_screens.ui.theme.Android5navigationbetweenscreensTheme
+import com.example.checkpoint.screens.LoginScreen
+import com.example.checkpoint.screens.MenuScreen
+import com.example.checkpoint.screens.PedidosScreen
+import com.example.checkpoint.screens.PerfilScreen
+import com.example.checkpoint.ui.theme.CHECKPOINTTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Android5navigationbetweenscreensTheme {
+            CHECKPOINTTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     val navController = rememberNavController()
 
